@@ -3,107 +3,161 @@
 <head>
   <title>SOEN Produce</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- <link rel="stylesheet" href="./CSS/bootstrap.css"> 
-  <script src="./JavaScript_files/jquery.min.js"></script>
-  <script src="./JavaScript_files/bootstrap.min.js"></script>-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type = "text/css">
-  p.five  {padding: 25px;
-               background-color: #C0C0C0;
-              }
-     th {<!--border: medium solid black;-->}
-    table {border: thin solid black;
-	}
-         
-    </style>
-  <!--<style>
-  .fakeimg {
-    height: 100px;
-    background: #99ffbb;
-  }
-  </style>-->
+  </style>
+  
+  <style>
+  * {box-sizing: border-box;}
+   <!--table {border: thin solid black;}-->
+html {
+  font-family: "Lucida Sans", sans-serif;
+}    
+.header {
+  background-color: #8EE595;
+  color: #1D5922;
+  padding: 30px;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #B0E0B4;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+  background-color: #71CC78;
+}
+
+<!--.menu {
+  width: 25%;
+  float: left;
+  padding: 30px;
+  border: 0px solid red;
+}-->
+
+.main {
+  width: 75%;
+  float: left;
+  padding: 30px;
+  border: 0px solid red;
+}
+.footer {
+ width: 75%;
+  float: left;
+  padding: 30px;
+  border: 0px solid red;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 0px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 50%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 50%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+   </style>
+
 </head>
 <body>
 
 <!--A Bootstrap class-->
-<div class="jumbotron text-center" style="margin-bottom:0">
+<!--<div class="jumbotron text-center" style="margin-bottom:0"> -->
+  <div class="header">
   <h1>SOEN Produce</h1>
   <h3>Your Place To Grocery Shop</h3>
 </div>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">MENU</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+<div class="menu">
+<div class="col-3 menu">
+ 
       <ul class="nav navbar-nav">
         <!--<li class="active"><a href="#">Home</a></li>-->
 		<li><a href="#">HOME</a></li>
-		<li><a href="#">ALL PRODUCTS</a></li>
-		<li><a href="#">AISLES</a></li>
-        <li><a href="#">HEALTHY CHOICES</a></li>
-		<li><a href="#">SPECIALS</a></li>
-        <li><a href="#">ABOUT US</a></li>
+		<!--<br>-->
+		<li><a href="#">All Products</a></li>
+		<li><a href="#">Aisles</a></li>
+        <li><a href="#">Healthy Choices</a></li>
+		<li><a href="#">Specials</a></li>
+        <li><a href="#">About Us</a></li>
       </ul>
+	  </div>
+	 
     </div>
-  </div>
-</nav>
 
-<div class="container">
+<div class="main">
   <div class="row">
-    <!--<div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-      <hr class="hidden-sm hidden-md hidden-lg">
-    </div>
-    <div class="col-sm-8">
-      <h2>FRUITS</h2>-->
+   <!--<div class="col-3">-->
+   <div class="col-9">
 	  <table>
 	  <tr>
-	  <th colspan="2">FRUITS<th>
+	  <th colspan="2"><h2>FRUITS</h2><th>
 	  </tr>
-	  <tr><td>Banana</td>
-		  <td>Orange</td>
+	  <tr><td>
+	  <img src="./images/banana_1280x1280.jpg" width="400" height="400">
+	  <h3>Banana</h3>
+	  <p>$0.41 avg. ea.<br>
+         (190 g avg.)<br>
+         $1.74 /kg$0.79 /lb.</p></td>
+		 <td>
+		  <img src="./images/apple-1325713-1279x1253.jpg" width="400" height="400">
+		  <h3>Apple</h3>
+		  <p>$0.51  avg. ea.<br>
+             (130 g avg.)<br>
+             $3.95 /kg$1.79 /lb.</p></td>
 	  </tr>	 
-      <tr><td>Grape</td>
-		  <td>Lime</td>
+      <tr><td>
+	  <img src="./images/grapes-1323010.jpg" width="400" height="400">
+	  <h3>Grape</h3>
+	  <p>$0.66 / 100 g<br>
+         $6.59 /kg$2.99 /lb.</p></td>
+		  <td>
+		  <img src="./images/Lime.jpg" width="400" height="400">
+		  <h3>Lime</h3>
+		  <p>4 /  $2.99<br>
+            $0.75 /un.</p></td>
 	  </tr>	
-      <tr><td>Peach</td>
-		  <td>Apple</td>
+      <tr><td>
+	  <img src="./images/peach-1187191-1279x1301.jpg" width="400" height="400">
+	  <h3>Peach</h3>
+	  <p>$1.76  avg. ea.<br>
+         $8.80 /kg$3.99 /lb.</p></td>
+		  <td>
+		  <img src="./images/orangey-1326706-1279x1390.jpg" width="400" height="400">
+		  <h3>Orange</h3>
+		  <p>$1.49 ea.<br>
+		      (230 g avg.)</p></td>
 	  </tr>		  
 	  </table>
-     <!-- <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
     </div>
-  </div>
+	</div>
+	</div>
 </div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
+<div class="footer">
+ <br>
+<p>Subscribe</p>
 
-</body>
-</html>
+	<input type="text" value="Email">
+	<input type="submit">
+	</div>
